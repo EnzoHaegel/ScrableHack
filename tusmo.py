@@ -76,9 +76,24 @@ def ponderatesWords(words, allLettersOccurrences):
         for letter in allLetters:
             if letter in word:
                 ponderate += allLettersOccurrences[allLetters.index(letter)][letter]
+        ponderate += countNumberOfWordSameLetterSamePlace(words, word)
         res.append({'word': word, 'ponderate': ponderate})
     res.sort(key=lambda x: x['ponderate'], reverse=True)
     print(*res[:5], sep="\n")
+    return res
+
+
+def countNumberOfWordSameLetterSamePlace(words, guess):
+    """
+    Return the number of words that have the same letters as the guess
+    :param words: the list of words
+    :param guess: the guess
+    return: the number of words that have the same letters as the guess"""
+    res = 0
+    for word in words:
+        for i in range (0, len(word)):
+            if guess[i] == word[i]:
+                res += 1
     return res
 
 
@@ -147,7 +162,6 @@ def main():
     print("5 lettres")
     randomWord = random.choice(five)
     obj = objectsWithCountOfEachLetters(five)
-    ponderatesWords(five, obj)
     guess = input("Quel est le mot ? ")
     while guess != randomWord:
         if guess not in five:
