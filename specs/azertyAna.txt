@@ -1,0 +1,20 @@
+anagram.py azerty
+0
+Anagrammes en 6
+trayez
+Anagrammes en 5
+ratez
+rayez
+tarez
+Anagrammes en 4
+ayez
+rate
+rate
+raye
+raye
+reat
+tare
+tare
+tzar
+zeta
+atre

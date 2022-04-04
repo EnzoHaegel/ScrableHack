@@ -1,0 +1,6 @@
+anagram.py
+0
+USAGE
+	anagram [letters]
+
+Va afficher les anagrammes possibles avec ces lettres

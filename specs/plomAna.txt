@@ -1,0 +1,10 @@
+anagram.py plom
+0
+Anagrammes en 4
+
+Anagrammes en 3
+mol
+Anagrammes en 2
+
+Anagrammes en 1
+
